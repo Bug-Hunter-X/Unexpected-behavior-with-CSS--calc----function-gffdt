@@ -1,0 +1,21 @@
+/* Correct usage of calc() */
+#element {
+  width: calc(100% - 20px);
+  height: calc(50% + 10vh);
+  padding: calc( (100vw - 20px) / 2 );
+}
+
+/* Incorrect usage - Missing spaces */
+/*#element {
+  width:calc(100%-20px);
+}*/
+
+/* Incorrect usage - Inconsistent units */
+/*#element {
+  width: calc(100px + 20%);
+}*/
+
+/* Incorrect usage - Improper nesting */
+/*#element {
+  width: calc(calc(50% - 10px) + 20px);
+}*/
